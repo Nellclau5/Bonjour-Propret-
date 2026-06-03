@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>Contact &amp; devis gratuit | Bonjour Propreté Montpellier</title>
+    <meta name="description" content="Contactez Bonjour Propreté à Montpellier pour un devis gratuit de nettoyage professionnel. Téléphone, email et formulaire de demande en ligne.">
+    <meta name="author" content="Bonjour Propreté">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.bonjour-proprete.fr/contact.html">
+
+    <!-- Google Fonts : Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Styles personnalisés -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top bp-navbar" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <span class="bp-logo-badge">
+                        <img src="images/BonjourPropete-.png" alt="Bonjour Propreté - entreprise de nettoyage" class="bp-logo-img">
+                    </span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Ouvrir le menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navContent">
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="apropos.html">À propos</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                        <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                            <a class="btn btn-bp-green" href="contact.html">Demander un devis</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ================= BANNIÈRE DE PAGE ================= -->
+    <section class="bp-page-hero">
+        <div class="container">
+            <h1>Contactez-nous</h1>
+            <p>Décrivez-nous votre besoin, nous vous répondons dans les plus brefs délais pour un devis gratuit et sans engagement.</p>
+            <div class="bp-breadcrumb">
+                <a href="index.html">Accueil</a> <i class="bi bi-chevron-right"></i> <span>Contact</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="bp-section">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-7 reveal" data-reveal>
+                    <form class="bp-form" id="contactForm" novalidate>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="nom" class="form-label">Nom complet</label>
+                                <input type="text" class="form-control" id="nom" name="nom" placeholder="Votre nom" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="telephone" class="form-label">Téléphone</label>
+                                <input type="tel" class="form-control" id="telephone" name="telephone" placeholder="06 00 00 00 00" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="vous@exemple.fr" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="prestation" class="form-label">Type de prestation</label>
+                                <select class="form-select" id="prestation" name="prestation" required>
+                                    <option value="" selected disabled>Choisir une prestation</option>
+                                    <option>Nettoyage d'immeubles et copropriétés</option>
+                                    <option>Entretien des bureaux et locaux professionnels</option>
+                                    <option>Nettoyage des parties communes</option>
+                                    <option>Lavage des vitres et surfaces vitrées</option>
+                                    <option>Désinfection et entretien sanitaire</option>
+                                    <option>Nettoyage après travaux et déménagement</option>
+                                    <option>Maintenance régulière / sur mesure</option>
+                                    <option>Autre</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Décrivez votre besoin..." required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-bp-green btn-lg w-100 w-md-auto">
+                                    <i class="bi bi-send me-2"></i>Envoyer ma demande
+                                </button>
+                            </div>
+                            <div class="col-12">
+                                <div class="bp-form-success d-none" id="formSuccess">
+                                    <i class="bi bi-check-circle-fill me-2"></i>
+                                    Merci ! Votre demande a bien été prise en compte. Nous vous recontacterons rapidement.
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-lg-5 reveal" data-reveal>
+                    <div class="bp-contact-info h-100">
+                        <h3>Nos coordonnées</h3>
+                        <p class="bp-contact-intro">Une question ? Contactez-nous directement.</p>
+
+                        <a href="tel:+33400000000" class="bp-contact-item">
+                            <span class="bp-contact-ico"><i class="bi bi-telephone-fill"></i></span>
+                            <span>
+                                <strong>Téléphone</strong>
+                                04 00 00 00 00
+                            </span>
+                        </a>
+                        <a href="mailto:contact@bonjour-proprete.fr" class="bp-contact-item">
+                            <span class="bp-contact-ico"><i class="bi bi-envelope-fill"></i></span>
+                            <span>
+                                <strong>Email</strong>
+                                contact@bonjour-proprete.fr
+                            </span>
+                        </a>
+                        <div class="bp-contact-item">
+                            <span class="bp-contact-ico"><i class="bi bi-geo-alt-fill"></i></span>
+                            <span>
+                                <strong>Adresse</strong>
+                                Montpellier et ses environs (34)
+                            </span>
+                        </div>
+
+                        <div class="bp-contact-hours">
+                            <i class="bi bi-clock me-2"></i>
+                            Du lundi au samedi · 8h00 – 19h00
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bp-footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="navbar-brand d-inline-flex mb-3" href="index.html">
+                        <span class="bp-logo-badge">
+                            <img src="images/BonjourPropete-.png" alt="Bonjour Propreté" class="bp-logo-img">
+                        </span>
+                    </a>
+                    <p class="bp-footer-text">
+                        Votre partenaire de confiance pour un environnement propre et sain à Montpellier et ses environs.
+                    </p>
+                    <div class="bp-social">
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 offset-lg-1">
+                    <h4>Liens rapides</h4>
+                    <ul class="bp-footer-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="apropos.html">À propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-4">
+                    <h4>Coordonnées</h4>
+                    <ul class="bp-footer-contact">
+                        <li><i class="bi bi-telephone me-2"></i>04 00 00 00 00</li>
+                        <li><i class="bi bi-envelope me-2"></i>contact@bonjour-proprete.fr</li>
+                        <li><i class="bi bi-geo-alt me-2"></i>Montpellier et ses environs (34)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bp-footer-bottom">
+                <p>© <span id="year"></span> Bonjour Propreté. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bouton WhatsApp flottant -->
+    <a href="https://wa.me/33600000000" class="bp-whatsapp" target="_blank" rel="noopener" aria-label="Contactez-nous sur WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

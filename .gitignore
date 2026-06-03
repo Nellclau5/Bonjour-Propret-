@@ -1,0 +1,11 @@
+# Système / éditeurs
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+*.log
+
+# Dossiers d'environnement
+node_modules/
+.vscode/
+.idea/
