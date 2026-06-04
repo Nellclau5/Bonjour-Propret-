@@ -26,6 +26,8 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 body {
@@ -33,6 +35,10 @@ body {
     color: var(--bp-text);
     background-color: var(--bp-white);
     overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    overflow-wrap: break-word;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -203,7 +209,8 @@ section {
     .bp-navbar .nav-link {
         color: var(--bp-navy);
     }
-    .bp-navbar .navbar-toggler-icon {
+    .bp-navbar:not(.scrolled) .navbar-toggler-icon,
+    .bp-navbar.scrolled .navbar-toggler-icon {
         filter: none;
     }
     .navbar-toggler {
