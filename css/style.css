@@ -960,6 +960,22 @@ section {
     color: rgba(255, 255, 255, 0.55);
 }
 
+.bp-credit {
+    margin-top: 0.4rem !important;
+}
+
+.bp-credit a {
+    color: var(--bp-green);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.25s ease;
+}
+
+.bp-credit a:hover {
+    color: var(--bp-blue-light);
+    text-decoration: underline;
+}
+
 /* ===================== WHATSAPP FLOTTANT ===================== */
 .bp-whatsapp {
     position: fixed;
