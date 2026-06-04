@@ -43,6 +43,7 @@
                     <ul class="navbar-nav ms-auto align-items-lg-center">
                         <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
                         <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="secteur.html">Secteur &amp; horaires</a></li>
                         <li class="nav-item"><a class="nav-link" href="apropos.html">À propos</a></li>
                         <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
                         <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
@@ -73,30 +74,42 @@
                     <form class="bp-form" id="contactForm" novalidate>
                         <div class="row g-3">
                             <div class="col-md-6">
-                                <label for="nom" class="form-label">Nom complet</label>
+                                <label for="nom" class="form-label">Nom</label>
                                 <input type="text" class="form-control" id="nom" name="nom" placeholder="Votre nom" required>
                             </div>
                             <div class="col-md-6">
+                                <label for="prenom" class="form-label">Prénom</label>
+                                <input type="text" class="form-control" id="prenom" name="prenom" placeholder="Votre prénom" required>
+                            </div>
+                            <div class="col-md-6">
                                 <label for="telephone" class="form-label">Téléphone</label>
-                                <input type="tel" class="form-control" id="telephone" name="telephone" placeholder="06 00 00 00 00" required>
+                                <input type="tel" class="form-control" id="telephone" name="telephone" placeholder="06 12 34 56 78" required>
                             </div>
                             <div class="col-md-6">
                                 <label for="email" class="form-label">Email</label>
                                 <input type="email" class="form-control" id="email" name="email" placeholder="vous@exemple.fr" required>
                             </div>
+                            <div class="col-12">
+                                <label for="adresse" class="form-label">Adresse du chantier</label>
+                                <input type="text" class="form-control" id="adresse" name="adresse" placeholder="Adresse du lieu à nettoyer" required>
+                            </div>
                             <div class="col-md-6">
                                 <label for="prestation" class="form-label">Type de prestation</label>
                                 <select class="form-select" id="prestation" name="prestation" required>
                                     <option value="" selected disabled>Choisir une prestation</option>
-                                    <option>Nettoyage d'immeubles et copropriétés</option>
-                                    <option>Entretien des bureaux et locaux professionnels</option>
-                                    <option>Nettoyage des parties communes</option>
-                                    <option>Lavage des vitres et surfaces vitrées</option>
-                                    <option>Désinfection et entretien sanitaire</option>
-                                    <option>Nettoyage après travaux et déménagement</option>
-                                    <option>Maintenance régulière / sur mesure</option>
+                                    <option>Nettoyage de bureaux</option>
+                                    <option>Nettoyage de copropriétés</option>
+                                    <option>Nettoyage de vitres</option>
+                                    <option>Fin de chantier</option>
+                                    <option>Nettoyage de commerces</option>
+                                    <option>Remise en état</option>
+                                    <option>Désinfection</option>
                                     <option>Autre</option>
                                 </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="surface" class="form-label">Surface à nettoyer</label>
+                                <input type="text" class="form-control" id="surface" name="surface" placeholder="Ex. : 120 m²">
                             </div>
                             <div class="col-12">
                                 <label for="message" class="form-label">Message</label>
@@ -178,6 +191,7 @@
                     <ul class="bp-footer-links">
                         <li><a href="index.html">Accueil</a></li>
                         <li><a href="services.html">Services</a></li>
+                        <li><a href="secteur.html">Secteur &amp; horaires</a></li>
                         <li><a href="apropos.html">À propos</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>

@@ -1170,3 +1170,132 @@ svg {
         font-size: 1rem;
     }
 }
+
+/* ===================== POINTS FORTS DU HERO ===================== */
+.bp-hero-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem 1.8rem;
+}
+
+.bp-hero-features li {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: 500;
+    font-size: clamp(0.92rem, 1.6vw, 1.02rem);
+}
+
+.bp-hero-features i {
+    color: var(--bp-green);
+    font-size: 1.15rem;
+}
+
+/* ===================== SECTEUR D'INTERVENTION ===================== */
+.bp-zone-grid {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.bp-zone-item {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 1rem 1.2rem;
+    box-shadow: var(--bp-shadow-soft);
+    font-weight: 500;
+    color: var(--bp-navy);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bp-zone-item:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--bp-shadow);
+}
+
+.bp-zone-item i {
+    color: var(--bp-green);
+    font-size: 1.2rem;
+}
+
+.bp-zone-note {
+    margin-top: 1.5rem;
+    color: var(--bp-muted);
+    font-style: italic;
+}
+
+/* ===================== HORAIRES ===================== */
+.bp-hours-card {
+    background-color: #fff;
+    border-radius: var(--bp-radius);
+    padding: 2rem 2.2rem;
+    box-shadow: var(--bp-shadow-soft);
+    border-top: 4px solid var(--bp-green);
+}
+
+.bp-hours-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.bp-hours-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.85rem 0;
+    border-bottom: 1px solid rgba(31, 58, 95, 0.08);
+}
+
+.bp-hours-list li:last-child {
+    border-bottom: none;
+}
+
+.bp-hours-list .bp-day {
+    font-weight: 600;
+    color: var(--bp-navy);
+}
+
+.bp-hours-list .bp-time {
+    color: var(--bp-muted);
+    font-weight: 500;
+}
+
+.bp-hours-list .bp-closed {
+    color: #c0392b;
+    font-weight: 600;
+}
+
+.bp-interventions {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0 0;
+}
+
+.bp-interventions li {
+    position: relative;
+    padding-left: 1.9rem;
+    margin-bottom: 0.85rem;
+    color: var(--bp-text);
+    font-weight: 500;
+}
+
+.bp-interventions li::before {
+    content: '\F26A';
+    font-family: 'bootstrap-icons';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--bp-green);
+    font-size: 1.1rem;
+}
